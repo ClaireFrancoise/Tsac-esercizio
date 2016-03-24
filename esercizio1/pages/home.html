@@ -1,0 +1,21 @@
+<h1>Home</h1>
+<div class="row">
+    <h4 class="col-md-offset-1">Ricerca dati Milano</h4>
+</div>
+<br/>
+    <table>
+        <thead>
+        <tr>
+            <th>Indirizzo</th>
+            <th>Civico</th>
+            <th>Codice postale</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in json | limitTo: 10">
+                <td>{{data.Ubicazione}}</td>
+                <td>{{data.Civico}}</td>
+                <td>{{data.CodiceVia}}</td>
+            </tr>
+        </tbody>
+    </table>

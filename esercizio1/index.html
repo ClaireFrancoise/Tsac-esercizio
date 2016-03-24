@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script type="text/javascript" src="angular-1.4.8/angular.js"></script>
+    <script type="text/javascript" src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+    <script type="text/javascript" src="pages/homeController.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div class="container-fluid">
+        <div class="row">
+            <a ui-sref="home">Home</a>
+        </div>
+        <div class="row">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+</html>
