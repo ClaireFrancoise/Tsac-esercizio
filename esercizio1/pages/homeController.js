@@ -3,7 +3,7 @@
     $scope.search=function(){
         $http({
             method: 'GET',
-            url: 'esercizi_vicinato_sede_fissa.csv'
+            url: 'dati.csv'
         }).then(function(resp) {
             console.log('ciao');
             $scope.json= JSON.parse(CSV2JSON(resp.data));
